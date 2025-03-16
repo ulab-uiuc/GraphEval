@@ -1,7 +1,7 @@
 # GraphEval: A Lightweight Graph-Based LLM Framework for Idea Evaluation
 
 <p align="center">
-    <a href="https://github.com/ulab-uiuc/GraphEval/">
+    <a href="https://ulab-uiuc.github.io/GraphEval/">
         <img alt="Build" src="https://img.shields.io/badge/Project-Page-blue">
     </a>
     <a href="https://openreview.net/pdf?id=5RUM1aIdok">
