@@ -56,7 +56,7 @@ mask_rate: 0.5
 GNN_batch_size: 32
 model_path: 'model_path/best_model.pth'
 learning_rate: 1e-3
-wandb_key: '84679e2187c9dff30d66ba819d630dc2f25a0237'
+wandb_key: ''
 
 
 
