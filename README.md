@@ -27,7 +27,7 @@
 
 
 <p align="center">
-    <a href="https://github.com/ulab-uiuc/GraphEval/">🌐 Project Page</a> |
+    <a href="https://ulab-uiuc.github.io/GraphEval/">🌐 Project Page</a> |
     <a href="https://openreview.net/pdf?id=5RUM1aIdok">📜 arXiv</a>
     <!-- <a href="xxx">📮 Twitter Post</a> -->
 <p>
