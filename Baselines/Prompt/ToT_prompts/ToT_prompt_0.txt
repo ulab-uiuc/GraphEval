@@ -1,0 +1,14 @@
+<Instruction>
+Please evaluate the novelty of the paper draft provided. 
+Novelty refers to how new or original the ideas, techniques, or perspectives are in this paper. Does the paper introduce a new problem that has not been explored before? Does it present significant advancements compared to existing methods in the field? Consider how this work aligns with or diverges from current research trends.
+
+You only need to give a novelty rating (0-10). No detailed analysis is required.
+
+<Input>
+Title: {title}
+Abstract: {abstract}
+
+<Output>
+Please generate a rating for the novelty of this paper (1-10)
+An example of the output:
+Novelty Rating (1-10): 5

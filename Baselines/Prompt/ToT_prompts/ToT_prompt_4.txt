@@ -1,0 +1,18 @@
+<Instruction> 
+Please evaluate the clarity of the paper draft based on the provided title, abstract, ratings(novelty, validity, significance, rigorousness).
+Clarity refers to how well the paper communicates its ideas. Are the title and abstract clear, concise, and informative? Does the paper effectively convey its significance and contributions? 
+
+You only need to give a clarity rating (1-10). No detailed analysis is required. 
+
+<Input> 
+Title: {title} 
+Abstract: {abstract} 
+Novelty Rating (1-10): {novelty_result} 
+Validity Rating (1-10): {validity_result} 
+Significance Rating (1-10): {significance_result} 
+Rigorousness Rating (1-10): {rigorousness_result} 
+
+<Output> 
+Please generate a rating for the clarity of this paper (1-10). 
+An example of the output: 
+Clarity Rating (1-10): 5

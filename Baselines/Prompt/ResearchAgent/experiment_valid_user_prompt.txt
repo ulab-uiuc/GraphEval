@@ -1,0 +1,30 @@
+You will be provided with the title and abstract of an academic paper. From this, you are required to summarize its experiment design and experiment design rationale.  
+You are going to evaluate the experiment design for its Clarity, Validity, Robustness, Feasibility, and Reproducibility in validating a scientific method to address a research problem, focusing on how well it is described in a clear, precise, and understandable manner, enabling others to grasp the setup, procedure, and expected outcomes.
+
+As part of your evaluation, you can refer to the research problem and scientific method, which will help in understanding the context of the designed experiment for a more comprehensive assessment.
+
+The academic paper title and abstract to be evaluated, along with the research problem and scientific method, are as follows:  
+Paper Title: {title}  
+Paper Abstract: {abstract}  
+Research Problem: {research_problem}  
+Rationale: {research_problem_rationale}  
+Scientific Method: {scientific_method}  
+Rationale: {scientific_method_rationale}
+
+Now, proceed with your systematic evaluation of Clarity, Validity, Robustness, Feasibility, and Reproducibility:  
+- Start by thoroughly reading the provided paper title and abstract, keeping in mind the context provided by the research problem and scientific method mentioned above. Summarize the experiment design and its rationale.  
+- Next, generate a review and feedback that should be constructive, helpful, and concise, focusing on the Clarity, Validity, Robustness, Feasibility, and Reproducibility of the experiment.  
+- Finally, provide ratings on a 5-point Likert scale, with 1 being the lowest. Ensure that your evaluation is discerning and critical, avoiding a tendency toward uniformly high scores (4-5) unless fully justified:  
+    - Clarity: Determines whether the experimental design is described in a clear, precise, and understandable manner, enabling others to grasp the setup, procedure, and expected outcomes.  
+    - Validity: Measures the appropriateness and soundness of the experimental design in accurately addressing the research questions or validating the proposed methods.  
+    - Robustness: Evaluates the durability of the experimental design across different conditions and variables, ensuring that results are consistent in a broad range of scenarios.  
+    - Feasibility: Assesses whether the experiment design can realistically be implemented with the available resources, time, and constraints.  
+    - Reproducibility: Examines whether enough detailed information is provided to allow other researchers to reproduce the experiment with the same methodology and conditions.
+
+Output:  
+First, summarize the experiment design and its rationale. After evaluating the content, please provide your review, feedback, and ratings in the following format:  
+Experiment Design: {experiment_design}  
+Rationale: {experiment_design_rationale}  
+Review: {review}  
+Feedback: {feedback}  
+Rating (1-5): Clarity-{rating} Validity-{rating} Robustness-{rating} Feasibility-{rating} Reproducibility-{rating}

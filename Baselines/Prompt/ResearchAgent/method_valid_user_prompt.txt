@@ -1,0 +1,28 @@
+You will be provided with the title and abstract of an academic paper. From this, you are required to summarize its Scientific Method and Scientific Method Rationale. You need to evaluate the method for its Clarity, Validity, Rigorousness, Innovativeness, and Generalizability, focusing on whether the method is described clearly, precisely, and understandably, ensuring that it can be replicated and easily comprehended.
+
+As part of your evaluation, you may refer to the research problem of the paper, which will help you better understand the context of the method and conduct a more comprehensive assessment.
+
+The academic paper title and abstract to be evaluated and the research problem are as follows:
+Paper Title: {title}  
+Paper Abstract: {abstract}
+Research problem: {research_problem}  
+Rationale: {research_problem_rationale}
+
+Now, please proceed with the systematic evaluation of the method based on Clarity, Validity, Rigorousness, Innovativeness, and Generalizability:
+
+- First, carefully read the provided paper title and abstract, keeping in mind the context provided by the research problem, and summarize the scientific method and its rationale.
+- Next, generate a review and feedback that should be constructive, helpful, and concise, focusing on the method’s Clarity, Validity, Rigorousness, Innovativeness, and Generalizability.
+- Finally, provide ratings on a 5-point Likert scale, with 1 being the lowest. Ensure that your ratings are discerning and critical, avoiding a tendency toward uniformly high scores (4-5) unless fully justified. The definitions of each evaluation criterion are as follows:
+    - Clarity: Assesses whether the method is described clearly, precisely, and understandably, allowing for replication and comprehension.
+    - Validity: Measures the accuracy, relevance, and appropriateness of the method in addressing the research problem.
+    - Rigorousness: Evaluates the thoroughness, precision, and consistency of the method, ensuring that it is systematic and meets high research standards.
+    - Innovativeness: Assesses whether the method introduces new techniques, approaches, or perspectives that advance the field.
+    - Generalizability: Examines whether the method can be applied to other contexts, populations, or settings beyond the scope of the study.
+
+Output:  
+First, summarize the scientific method and its rationale. After evaluating the content, please provide your review, feedback, and ratings in the following format:
+Scientific Method: {scientific_method}  
+Rationale: {scientific_method_rationale}  
+Review: {review}  
+Feedback: {feedback}  
+Rating (1-5): Clarity-{rating} Validity-{rating} Rigorousness-{rating} Innovativeness-{rating} Generalizability-{rating}

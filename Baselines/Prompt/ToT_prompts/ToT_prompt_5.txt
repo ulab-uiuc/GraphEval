@@ -1,0 +1,19 @@
+<Instruction> 
+Please evaluate the ethical considerations of the paper draft based on the provided title, abstract, and ratings (novelty, validity, significance, rigorousness, and clarity). 
+Ethical considerations refer to whether the paper adheres to ethical research guidelines, addresses potential biases, and considers any possible negative consequences of the research. 
+
+You only need to give an ethical considerations rating (1-10). No detailed analysis is required. 
+
+<Input> 
+Title: {title} 
+Abstract: {abstract} 
+Novelty Rating (1-10): {novelty_result} 
+Validity Rating (1-10): {validity_result} 
+Significance Rating (1-10): {significance_result} 
+Rigorousness Rating (1-10): {rigorousness_result} 
+Clarity Rating (1-10): {clarity_result} 
+
+<Output> 
+Please generate a rating for the ethical considerations of this paper (1-10). 
+An example of the output: 
+Ethical Considerations Rating (1-10): 5

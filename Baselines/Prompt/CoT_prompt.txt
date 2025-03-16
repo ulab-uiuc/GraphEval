@@ -1,0 +1,66 @@
+<Instruction>
+Please evaluate the paper draft step by step based on the following dimensions. For each step, carefully think through and evaluate the corresponding dimension, and then provide ratings for each dimension (1-10). You must give an overall score (0-100) along with the 6 dimension scores. No detailed analysis is needed, but ensure that your evaluation for each step is based on logical reasoning.
+
+<Input>
+Here is the paper draft to evaluate: Title – {title}; Abstract – {abstract};
+
+<Step 1: Evaluate Novelty>
+First, evaluate the novelty of the paper. Does it introduce a new problem or perspective that has not been explored before? Does it introduce new techniques or represent a significant advancement compared to existing methods? How does it align with or diverge from current research trends?
+Novelty Rating (1-10):
+
+<Step 2: Evaluate Validity>
+Next, evaluate the validity of the paper. Does it include solid theoretical foundations, robust algorithms, and detailed methodologies to address the research problem? Are the underlying principles well-defined and logically consistent?
+Validity Rating (1-10):
+
+<Step 3: Evaluate Significance>
+Then, evaluate the significance of the paper. Consider its potential contribution and impact on the research community in its specific domain and beyond. How does it compare to existing works in terms of impact?
+Significance Rating (1-10):
+
+<Step 4: Evaluate Rigorousness>
+Now, evaluate the rigorousness of the paper. Are the research design and methods clearly described and justified? Is the methodology robust and appropriate for addressing the research questions? Are the results well-analyzed and interpreted? Do the findings support the claims made in the paper?
+Rigorousness Rating (1-10):
+
+<Step 5: Evaluate Clarity>
+Next, evaluate the clarity of the paper. How well do the title and abstract summarize the paper? Are they clear, concise, and informative? Does the paper effectively convey its significance and main contributions? Are the title and abstract well-aligned with each other and accurately represent the core idea and content of the paper? Is the content well-structured and easy to follow?
+Clarity Rating (1-10):
+
+<Step 6: Evaluate Ethical Considerations
+Lastly, evaluate the ethical considerations of the paper. Does it adhere to ethical guidelines and responsible research practices? Are potential negative consequences or biases addressed?
+Ethical Considerations Rating (1-10):
+
+<Step 7: Final Overall Score>
+After completing all the dimension evaluations, summarize your assessment and give an overall score that reflects the paper’s general quality and performance across all dimensions.
+Overall Score (0-100):
+
+<Step 8: Final Decision> 
+Based on the overall score and individual ratings, choose the most appropriate review decision. Carefully consider how the paper performs in each dimension, and select from the following categories:
+Reject: Papers in this category lack sufficient novelty, contain fundamental flaws in methodology, or fail to present a significant contribution to the field. For example, a paper that proposes a minor tweak to existing methods without offering substantial improvement may fall under this category.
+Accept (Poster): These papers offer incremental contributions, demonstrate solid theoretical or experimental work, and may be of interest to a niche audience. They have clear and understandable results but may not present breakthroughs.
+Accept (Oral): Papers in this category present more significant contributions to the field, with clear and convincing evidence of effectiveness. The methodology is robust, and the findings are impactful. These papers are well-executed and can be of interest to a broader audience.
+Accept (Spotlight): Papers that represent groundbreaking work or a major advancement in the field, offering novel insights or techniques with broad applicability and significant potential impact. These papers stand out in terms of both innovation and technical quality.
+Decision:
+
+<Examples for Evaluation Standards>
+**Example 1**
+Title – SparRL: Graph Sparsification via Deep Reinforcement Learning; Abstract – Graph sparsification concerns data reduction where an edge-reduced graph of a similar structure is preferred. Existing methods are mostly sampling-based, which introduce high computation complexity in general and lack of flexibility for a different reduction objective. We present SparRL, the first general and effective reinforcement learning-based framework for graph sparsification. SparRL can easily adapt to different reduction goals and promise graph-size-independent complexity. Extensive experiments show that SparRL outperforms all prevailing sparsification methods in producing high-quality sparsified graphs concerning a variety of objectives. As graph representations are very versatile, SparRL carries the potential for a broad impact.;
+Decision: Reject
+**Example 2**
+Title – Bi-linear Value Networks for Multi-goal Reinforcement Learning; Abstract – Universal value functions are used to score the long-term utility of actions to achieve a goal from the current state. In contrast to prior methods that learn a monolithic function to approximate the value, we propose a bi-linear decomposition of the value function. The first component, akin to a global plan models how the state should be changed to reach the goal. The second component, akin to a local controller selects the optimal action to actualize the desired change in state. We simultaneously learn both components. Such decomposition enables both the global and local components to make efficient use of interaction data and independently generalize. The consequence is superior overall generalization and performance of our system on a wide range of challenging goal-conditioned tasks in comparison to the current state-of-the-art.;
+Decision: Accept (Poster)
+**Example 3**
+Title - Bootstrapped Meta-Learning; Abstract - Meta-learning empowers artificial intelligence to increase its efficiency by learning how to learn. Unlocking this potential involves overcoming a challenging meta-optimisation problem. We propose an algorithm that tackles this problem by letting the meta-learner teach itself. The algorithm first bootstraps a target from the meta-learner, then optimises the meta-learner by minimising the distance to that target under a chosen (pseudo-)metric. Focusing on meta-learning with gradients, we establish conditions that guarantee performance improvements and show that metric can be used to control meta-optimisation. Meanwhile, the bootstrapping mechanism can extend the effective meta-learning horizon without requiring backpropagation through all updates. We achieve a new state-of-the art for model-free agents on the Atari ALE benchmark and demonstrate that it yields both performance and efficiency gains in multi-task meta-learning. Finally, we explore how bootstrapping opens up new possibilities and find that it can meta-learn efficient exploration in an epsilon-greedy Q-learning agent - without backpropagating through the update rule.;
+Decision: Accept (Oral)
+**Example 4**
+Title - Sample Efficient Deep Reinforcement Learning via Uncertainty Estimation; Abstract - In model-free deep reinforcement learning (RL) algorithms, using noisy value estimates to supervise policy evaluation and optimization is detrimental to the sample efficiency. As this noise is heteroscedastic, its effects can be mitigated using uncertainty-based weights in the optimization process. Previous methods rely on sampled ensembles, which do not capture all aspects of uncertainty. We provide a systematic analysis of the sources of uncertainty in the noisy supervision that occurs in RL, and introduce inverse-variance RL, a Bayesian framework which combines probabilistic ensembles and Batch Inverse Variance weighting. We propose a method whereby two complementary uncertainty estimation methods account for both the Q-value and the environment stochasticity to better mitigate the negative impacts of noisy supervision. Our results show significant improvement in terms of sample efficiency on discrete and continuous control tasks.;
+Decision: Accept (Spotlight)
+
+<Output>
+The output format should follow these rules:
+Novelty Rating (1-10):  
+Validity Rating (1-10):  
+Significance Rating (1-10):  
+Rigorousness Rating (1-10):  
+Clarity Rating (1-10):  
+Ethical Considerations Rating (1-10):  
+Overall Score (0-100): 
+Decision: {one decision from "Reject", "Accept (Poster)", "Accept (Oral)", "Accept (Spotlight)"}

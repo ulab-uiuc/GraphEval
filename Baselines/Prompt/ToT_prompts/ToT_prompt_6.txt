@@ -1,0 +1,20 @@
+<Instruction> 
+Please evaluate the overall quality of the paper draft based on the provided title, abstract, and ratings (novelty, validity, significance, rigorousness, clarity, and ethical considerations). 
+The overall score should reflect the general quality of the paper and how well it performs across all the evaluation dimensions. 
+
+You only need to give an overall score (0-100). No detailed analysis is required. 
+
+<Input> 
+Title: {title} 
+Abstract: {abstract} 
+Novelty Rating (1-10): {novelty_result} 
+Validity Rating (1-10): {validity_result} 
+Significance Rating (1-10): {significance_result} 
+Rigorousness Rating (1-10): {rigorousness_result} 
+Clarity Rating (1-10): {clarity_result} 
+Ethical Considerations Rating (1-10): {ethical_considerations_result} 
+
+<Output> 
+Please generate an overall score for this paper (0-100). 
+An example of the output: 
+Overall Score (0-100): 80

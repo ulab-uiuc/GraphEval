@@ -1,0 +1,17 @@
+<Instruction> 
+Please evaluate the rigorousness of the paper draft based on the provided title, abstract and novelty, validity, significance ratings.
+Rigorousness refers to how thoroughly the research methods and analyses are conducted. Are the research design and methodologies clearly described and appropriate for the problem at hand? 
+
+You only need to give a rigorousness rating (1-10). No detailed analysis is required. 
+
+<Input> 
+Title: {title} 
+Abstract: {abstract} 
+Novelty Rating (1-10): {novelty_result} 
+Validity Rating (1-10): {validity_result} 
+Significance Rating (1-10): {significance_result} 
+
+<Output> 
+Please generate a rating for the rigorousness of this paper (1-10). 
+An example of the output: 
+Rigorousness Rating (1-10): 5

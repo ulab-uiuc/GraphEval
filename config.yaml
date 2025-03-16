@@ -1,0 +1,91 @@
+# Config parameters for LLM generation:
+api_base: ''
+api_key: ""
+max_trials: 5
+temperature: 0.1
+max_tokens: 4000
+random_seed: 42
+reset_time: 1.2
+
+
+# Config parameters for viewpoint extraction:
+llm_model: "mistralai/Mistral-7B-Instruct-v0.3"
+save_node_list: True
+node_list_save_path: "./save"
+
+# Config parameters for embedding-based viewpoint-graph construction:
+intra_graph_deg: 5
+inter_graph_deg: 10
+batch_size: -1 # The number of nodes processed per batch in embedding-based viewpoint-graph construction, where -1 indicates processing all nodes simultaneously.
+save_edge_list: True
+edge_list_save_path: "./save"
+
+## Config parameters for ICLR datasets:
+dataset_path: "Data/ICLR_Dataset/ICLR_dataset.jsonl"  # The dataset containing all research ideas.
+training_set_path: "Data/ICLR_Dataset/ICLR_training_set.jsonl" # For GraphEval and Finetuned BERT, use the ideas in this subset for training or label propagation.
+test_set_path: "Data/ICLR_Dataset/ICLR_test_set.jsonl" # For all methods, conduct testing on this subset.
+node_list_paths:
+  - "Data/ICLR_Dataset/node_list/training_node_list.jsonl"
+  - "Data/ICLR_Dataset/node_list/test_node_list.jsonl"
+edge_list_paths:
+  - "Data/ICLR_Dataset/edge_list/bert_based_edge_list.jsonl"
+
+# Config parameters for AI Researcher dataset:
+#dataset_path: "Data/AI_Researcher/dataset.jsonl"  # The dataset containing all research ideas.
+#training_set_path: "Data/AI_Researcher/training_set.jsonl" # For GraphEval and Finetuned BERT, use the ideas in this subset for training or label propagation.
+#test_set_path: "Data/AI_Researcher/test_set.jsonl" # For all methods, conduct testing on this subset.
+#node_list_paths:
+#  - "Data/AI_Researcher/node_list/training_node_list.jsonl"
+#  - "Data/AI_Researcher/node_list/test_node_list.jsonl"
+#edge_list_paths:
+#  - "Data/AI_Researcher/edge_list/edge_list.jsonl"
+
+
+
+# Config parameters for Task:
+Task_name: "ICLR"  # AI_Researcher ICLR
+seed: 666
+
+
+# Config parameters for GraphEval-GNN:
+GNN_max_iters: 100
+GNN_hidden_features_dim: 64
+GNN_output_dim: 4  # AI_Researcher:3 ICLR:4
+GNN_edge_dim: 1
+mask_rate: 0.5
+GNN_batch_size: 32
+model_path: 'model_path/best_model.pth'
+learning_rate: 1e-3
+wandb_key: '84679e2187c9dff30d66ba819d630dc2f25a0237'
+
+
+
+
+# Config parameters for GraphEval-LP:
+LP_max_iters: 5
+LP_label_weights:
+  0: 1
+  1: 1.068
+  2: 1.1
+  3: 1.128
+ 
+# Config parameters for all Baselines:
+baseline: "Finetuned Bert" #["Prompted LLM", "CoT", "CoT-SC", "ToT", "Research Agent", "Finetuned Bert"]
+save_baseline_results: True
+baseline_results_save_path: "./results/baseline_results.jsonl"
+
+# Config parameters for CoT-SC Baseline:
+CoT_SC_k: 5
+
+# Config parameters for ToT Baseline:
+ToT_branch_num: 3
+
+# Config parameters for Finetuned Bert Baseline:
+finetuned_Bert_model_name: "distilbert-base-uncased"
+Bert_evaluation_strategy: "epoch"
+Bert_train_batch_size: 8
+Bert_eval_batch_size: 8
+Bert_num_train_epochs: 3
+Bert_learning_rate: 3e-5
+Bert_weight_decay: 0.01
+Bert_logging_steps: 10

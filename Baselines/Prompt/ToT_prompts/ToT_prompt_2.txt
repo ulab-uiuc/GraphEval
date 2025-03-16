@@ -1,0 +1,16 @@
+<Instruction> 
+Please evaluate the significance of the paper draft based on the provided title, abstract, novelty and validity ratings.
+Significance refers to the potential impact of the research in its specific field and beyond. How important or groundbreaking are the contributions of this paper compared to existing works? 
+
+You only need to give a significance rating (1-10). No detailed analysis is required. 
+
+<Input> 
+Title: {title} 
+Abstract: {abstract} 
+Novelty Rating (1-10): {novelty_result} 
+Validity Rating (1-10): {validity_result} 
+
+<Output> 
+Please generate a rating for the significance of this paper (1-10). 
+An example of the output: 
+Significance Rating (1-10): 5

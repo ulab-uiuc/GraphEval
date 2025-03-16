@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="GraphEval: A Lightweight Graph-Based LLM Framework for Idea Evaluation">
+  <meta name="keywords" content="Idea Evaluation, View-graph, Lightweight model, Label propagation, Graph prediction">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GraphEval: A Lightweight Graph-Based LLM Framework for Idea Evaluation</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://github.com/ft2023/grapheval_quick">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://github.com/ft2023/grapheval_quick">
+            GoR
+          </a>
+          <a class="navbar-item" href="https://openreview.net/forum?id=sOSAu0XQcI">
+            Thought Retriever
+          </a>
+          <a class="navbar-item" href="https://github.com/ulab-uiuc/AcademicEval">
+            AcademicEval
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">GraphEval: A Lightweight Graph-Based LLM Framework for Idea Evaluation</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a>Tao Feng</a><sup>*</sup>,</span>
+            <span class="author-block">
+              <a>Yihang Sun</a><sup>*</sup>,</span>
+            <span class="author-block">
+              <a>Jiaxuan You</a>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">University of Illinois at Urbana-Champaign</span><br>
+            <span class="author-block"><sup>*</sup>Equal contribution</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://github.com/ft2023/grapheval_quick"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span>
+              <!-- <span class="link-block">
+                <a href="xxx"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-X"></i>
+                  </span>
+                  <span>Twitter</span>
+                  </a>
+              </span> -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            The powerful capabilities of Large Language Models (LLMs) have led to their grow-
+ing use in evaluating human-generated content, particularly in evaluating research
+ideas within academic settings. Existing solutions primarily rely on prompt-based
+LLM methods or fine-tuned lightweight language models for idea evaluation. How-
+ever, these methods are often unstable and struggle to comprehend the complex
+semantic information embedded in the ideas, impeding their ability to perform high-
+quality evaluations. To address the above challenges, we propose GraphEval,
+a lightweight graph-based LLM framework for idea evaluation. Our insight is
+that a complex idea can be broken down into comprehensible viewpoint-nodes
+using small prompted LLMs. These viewpoint-nodes can then be linked together
+through edges created from LLM-based relation extraction and/or BERT similarity
+scores. The created viewpoint-graph can be used to conveniently propagate scores
+across viewpoint-nodes to improve the robustness of the idea evaluations. In par-
+ticular, we propose two lightweight graph-based methods for idea evaluation: (1)
+GraphEval-LP: a training-free label propagation algorithm that propagates quality
+labels from known viewpoint-nodes to unknown nodes; (2) GraphEval-GNN: a
+Graph Neural Network (GNN) that is trained to predict the quality labels given
+the observed graph with minimal computation resources. Moreover, to overcome
+LLM’s limitation in objectively assessing the novelty of ideas, we further propose
+a novelty detection model to GraphEval-GNN to enhance its capability in judging
+idea novelty. Experiments on two datasets show GraphEval improves F1 scores
+by at least 14% with low computation and API costs. Additionally, GraphEval
+can effectively detect plagiarized ideas.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+              <h2 class="title is-3">GraphEval</h2>
+              <div class="content has-text-justified">
+                  <p>
+                    GraphEval first transforms the ideas into a
+viewpoint-graph via Viewpoint-Graph Extraction, which contains multiple viewpoint-subgraphs,
+viewpoint-nodes, and edges between viewpoint-nodes. Then two lightweight GraphEval imple-
+mentations named GraphEval-LP and GraphEval-GNN are employed to evaluate the ideas. Note that
+AGG denotes the acronym for aggregation function.
+                  </p>
+              </div>
+              <div>
+                  <img src="./static/figs/model.png" alt="model figure" width="600px"/>
+                  <p>GraphEval Model Architecture</p>
+              </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+              <h2 class="title is-3">Experiments</h2>
+              <div class="content has-text-justified">
+                  <p>
+                      Experimental results on ICLR Papers dataset over idea evaluation tasks w.r.t. Accuracy, Precision, Recall, F1 Score, 
+                      Token Cost, and Normed Cost. 
+                  </p>
+              </div>
+              <img src="./static/figs/result.jpg" alt="experimental results" width="600px"/>
+              <p>Experimental Results</p>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+              <h2 class="title is-3">Experiments</h2>
+              <div class="content has-text-justified">
+                  <p>
+                      Experimental results on AI Researcher dataset over idea evaluation tasks w.r.t. Accuracy, Precision, Recall, F1 Score, 
+                      Token Cost, and Normed Cost.  
+                  </p>
+              </div>
+              <img src="./static/figs/result.jpg" alt="experimental results" width="600px"/>
+              <p>Experimental Results</p>
+          </div>
+      </div>
+    </div>
+  </section>
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{GraphEval,
+  author    = {Tao Feng and Yihang Sun and Jiaxuan You},
+  title     = {GraphEval: A Lightweight Graph-Based LLM Framework for Idea Evaluation},
+  booktitle   = {Proceedings of the International Conference on Learning Representations (ICLR)},
+  year      = {2025},
+  url       = {https://openreview.net/pdf?id=5RUM1aIdok},
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="https://openreview.net/pdf?id=5RUM1aIdok">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/ft2023/grapheval_quick" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            Acknowledgement: this website is based on the template from <a
+            href="https://github.com/nerfies/nerfies.github.io">here</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

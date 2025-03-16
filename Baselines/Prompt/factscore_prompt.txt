@@ -1,0 +1,2 @@
+You need to act as an annotator and determine whether a statement about a celebrity is correct.
+You **must** and **only** output 'Correct' or 'Incorrect,' strictly indicating whether you judge the statement to be correct or not. Any response outside of these two options will be considered invalid.

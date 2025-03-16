@@ -1,0 +1,15 @@
+<Instruction> 
+Please evaluate the validity of the paper draft based on the provided title, abstract and novelty rating. 
+Validity refers to whether the theories, algorithms, or methodologies used in the paper are robust and well-founded. Does the paper provide a strong theoretical foundation and employ logically consistent methods? Is the research problem clearly addressed, and are the methods sound? 
+
+You only need to give a validity rating (1-10). No detailed analysis is required. 
+
+<Input> 
+Title: {title} 
+Abstract: {abstract} 
+Novelty Rating (1-10): {novelty_rating} 
+
+<Output> 
+Please generate a rating for the validity of this paper (1-10). 
+An example of the output: 
+Validity Rating (1-10): 5

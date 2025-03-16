@@ -1,0 +1,24 @@
+You will be provided with the title and abstract of an academic paper, and you need to extract its research problem and the rationale for the research problem. You are required to evaluate the research problem based on the following dimensions: Clarity, Relevance, Originality, Feasibility, and Significance, with a focus on whether it is clearly, accurately, and understandably defined.
+
+The academic paper title and abstract to be evaluated are as follows:  
+Paper Title: {title}  
+Paper Abstract: {abstract}
+
+Now, please proceed with a systematic evaluation focusing on Clarity, Relevance, Originality, Feasibility, and Significance:
+
+- First, carefully read the provided title and abstract, and extract the research problem and its rationale.
+- Next, generate a review and feedback that is constructive, helpful, and concise, focusing on the research problem's Clarity, Relevance, Originality, Feasibility, and Significance.
+- Finally, rate the problem on a 5-point Likert scale, with 1 being the lowest score. Ensure that your ratings are discerning and critical to avoid uniformly high scores (4-5) unless fully justified. The definitions for each evaluation criterion are as follows:
+  - Clarity: Evaluates whether the problem is clearly, precisely, and understandably defined.
+  - Relevance: Measures whether the problem is pertinent and applicable to the current field or context of study.
+  - Originality: Assesses whether the problem presents a novel challenge or unique perspective that has not been extensively explored before.
+  - Feasibility: Examines whether the problem can realistically be investigated or solved with the available resources and within reasonable constraints.
+  - Significance: Evaluates the importance and potential impact of solving the problem, including its contribution to the field or broader implications.
+
+Output:  
+First, summarize the research problem and its rationale from the provided paper. After evaluating the content, provide your review, feedback, and ratings in the following format:  
+Research Problem: {research_problem}  
+Rationale: {research_problem_rationale}  
+Review: {review}  
+Feedback: {feedback}  
+Rating (1-5): Clarity-{rating} Relevance-{rating} Originality-{rating} Feasibility-{rating} Significance-{rating}
