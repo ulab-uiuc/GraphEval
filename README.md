@@ -1,7 +1,7 @@
 # GraphEval: A Lightweight Graph-Based LLM Framework for Idea Evaluation
 
 <p align="center">
-    <a href="https://github.com/ft2023/grapheval_quick/">
+    <a href="https://github.com/ulab-uiuc/GraphEval/">
         <img alt="Build" src="https://img.shields.io/badge/Project-Page-blue">
     </a>
     <a href="https://openreview.net/pdf?id=5RUM1aIdok">
@@ -10,24 +10,24 @@
     <!-- <a href="xxx">
         <img alt="Build" src="https://img.shields.io/badge/Twitter-black?logo=X">
     </a> -->
-    <a href="https://github.com/ulab-uiuc/GoR/blob/master/LICENSE">
+    <a href="https://github.com/ulab-uiuc/GraphEval/blob/master/LICENSE">
         <img alt="License" src="https://img.shields.io/badge/LICENSE-MIT-green">
     </a>
     <br>
-    <a href="https://github.com/ft2023/grapheval_quick">
-        <img alt="Build" src="https://img.shields.io/github/stars/ft2023/grapheval_quick">
+    <a href="https://github.com/ulab-uiuc/GraphEval">
+        <img alt="Build" src="https://img.shields.io/github/stars/ulab-uiuc/GraphEval">
     </a>
-    <a href="https://github.com/ft2023/grapheval_quick">
-        <img alt="Build" src="https://img.shields.io/github/forks/ft2023/grapheval_quick">
+    <a href="https://github.com/ulab-uiuc/GraphEval">
+        <img alt="Build" src="https://img.shields.io/github/forks/ulab-uiuc/GraphEval">
     </a>
-    <a href="https://github.com/ft2023/grapheval_quick">
-        <img alt="Build" src="https://img.shields.io/github/issues/ft2023/grapheval_quick">
+    <a href="https://github.com/ulab-uiuc/GraphEval">
+        <img alt="Build" src="https://img.shields.io/github/issues/ulab-uiuc/GraphEval">
     </a>
 </p>
 
 
 <p align="center">
-    <a href="https://github.com/ft2023/grapheval_quick/">🌐 Project Page</a> |
+    <a href="https://github.com/ulab-uiuc/GraphEval/">🌐 Project Page</a> |
     <a href="https://openreview.net/pdf?id=5RUM1aIdok">📜 arXiv</a>
     <!-- <a href="xxx">📮 Twitter Post</a> -->
 <p>
@@ -115,6 +115,6 @@ python run_exp.py --method_name [Method]
 
 
 <!-- <picture>
-<source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=ulab-uiuc%2FGoR&theme=dark&type=Date">
-<img width="100%" src="https://api.star-history.com/svg?repos=ulab-uiuc%2FGoR&type=Date">
+<source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=ulab-uiuc%2FGraphEval&theme=dark&type=Date">
+<img width="100%" src="https://api.star-history.com/svg?repos=ulab-uiuc%2FGraphEval&type=Date">
 </picture> -->
