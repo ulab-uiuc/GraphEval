@@ -85,7 +85,7 @@ Generate viewpoint nodes and edges.
 
 ```bash
 # DATASET Choices: ICLR_Dataset, AI_Researcher and Review_Advisor
-python models.Graph_Extraction.py
+python models/Graph_Extraction.py
 ```
 
 
