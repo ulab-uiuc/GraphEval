@@ -4,7 +4,7 @@
     <a href="https://ulab-uiuc.github.io/GraphEval/">
         <img alt="Build" src="https://img.shields.io/badge/Project-Page-blue">
     </a>
-    <a href="https://openreview.net/pdf?id=5RUM1aIdok">
+    <a href="http://arxiv.org/abs/2503.12600">
         <img alt="Build" src="https://img.shields.io/badge/arXiv-2410.11001-red?logo=arxiv">
     </a>
     <!-- <a href="xxx">
