@@ -28,7 +28,7 @@
 
 <p align="center">
     <a href="https://ulab-uiuc.github.io/GraphEval/">🌐 Project Page</a> |
-    <a href="https://openreview.net/pdf?id=5RUM1aIdok">📜 arXiv</a>
+    <a href="https://arxiv.org/abs/2503.12600">📜 arXiv</a>
     <!-- <a href="xxx">📮 Twitter Post</a> -->
 <p>
 
@@ -105,11 +105,10 @@ python run_exp.py --method_name [Method]
 ## Citation
 
 ```bibtex
-@article{GraphEval,
+@inproceedings{fenggrapheval,
   title={GraphEval: A Lightweight Graph-Based LLM Framework for Idea Evaluation},
-  author={Tao Feng and Yihang Sun and Jiaxuan You},
-  journal={Proceedings of the International Conference on Learning Representations (ICLR)},
-  year={2025}
+  author={Feng, Tao and Sun, Yihang and You, Jiaxuan},
+  booktitle={The Thirteenth International Conference on Learning Representations}
 }
 ```
 
